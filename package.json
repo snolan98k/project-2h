@@ -1,24 +1,25 @@
 {
-  "name": "project-2",
+  "name": "project-2h",
   "version": "1.0.0",
-  "description": "coders_kiosk_bootcamp",
+  "description": "heroku",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "heroku": "^7.26.2",
+    "node.js": "0.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/M-Corey/project-2.git"
+    "url": "git+https://github.com/snolan98k/project-2h.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/M-Corey/project-2/issues"
+    "url": "https://github.com/snolan98k/project-2h/issues"
   },
-  "homepage": "https://github.com/M-Corey/project-2#readme",
-  "dependencies": {
-    "heroku": "^7.26.2",
-    "node.js": "0.0.0"
-  }
+  "homepage": "https://github.com/snolan98k/project-2h#readme"
 }
