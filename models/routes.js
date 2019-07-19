@@ -1,11 +1,22 @@
-const app = express();
+module.exports = {
+    handleRequest(request, response) {
+        response.writeHead(200, {
+            'Content-Type': 'text/html'
+        });
 
-const express = require('express')
-const path = require('path')
-var stripe = require('stripe')('sk_live_#');
-var bodyParser = require('body-parser');
-const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+        let path = url.parse(request.url).pathname;
+
+        switch (path) {
+            case '/':
+                html.render('./index.html', response);
+                break;
+            case '/about':
+                html.render('./about.html', response);
+                break;
+            default:
+                response.writeHead(404);
+                response.write('Route not found');
+                response.end();
+        }
+    }
+}
