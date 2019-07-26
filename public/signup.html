@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>Sign Up</title>
 </head>
@@ -32,10 +34,26 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <a href="./home.html">
-                <button type="button" class="btn btn-primary">Create Account</button>
+                <button id="form-submit" type="button" class="btn btn-primary">Create Account</button>
             </a>
         </form>
+
     </div>
+    <script>
+        $(document).ready(() => {
+            $("#form-submit").click(function (e) {
+                e.preventDefault()
+                const data = { f_name: $("#exampleInputFirstName").val(), email: $("#exampleInputEmail").val(), l_name: $("#exampleInputLastNamexampleInputPassword1").val(), passphrase: $("#exampleInputPassword1").val() }
+                $.post("./routes/api-route.js", data).then((form) => {
+                    // build out some table or something!
+                    $("#name").val("")
+                    $("#email").val("");
+                    $("#message").val("");
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>

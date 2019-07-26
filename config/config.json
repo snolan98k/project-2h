@@ -1,11 +1,12 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": null,
     "database": "coder_kiosk_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": true,
+    "port": 3306
   },
   "test": {
     "username": "root",
