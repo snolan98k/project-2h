@@ -1,7 +1,7 @@
 const express = require("express");
 const PORT = process.env.PORT || 3000;
 const app = express();
-const apiRoutes = require("./Routes/api-route");
+const apiRoutes = require("./routes/api-route");
 const db = require("./models");
 // setup middleware
 app.use(express.urlencoded({ extended: true }));
