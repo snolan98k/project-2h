@@ -39,12 +39,14 @@
         </form>
 
     </div>
+    <script
+                                                            src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
     <script>
         $(document).ready(() => {
             $("#form-submit").click(function (e) {
                 e.preventDefault()
-                const data = { f_name: $("#exampleInputFirstName").val(), email: $("#exampleInputEmail").val(), l_name: $("#exampleInputLastNamexampleInputPassword1").val(), passphrase: $("#exampleInputPassword1").val() }
-                $.post("./routes/api-route.js", data).then((form) => {
+                const data = { f_name: $("#exampleInputFirstName").val(), email: $("#exampleInputEmail").val(), l_name: $("#exampleInputLastName").val(), passphrase: $("#exampleInputPassword1").val() }
+                $.post("/", data).then((form) => {
                     // build out some table or something!
                     $("#name").val("")
                     $("#email").val("");

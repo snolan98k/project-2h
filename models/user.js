@@ -6,29 +6,24 @@ module.exports = function (sequelize, DataTypes) {
             allownull: false,
         },
         l_name: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
             allownull: false,
-            defaultValue: false
         },
         email: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
             allownull: false,
-            defaultValue: false
         },
         passphrase: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
             allownull: false,
-            defaultValue: false
         },
         age: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
             allownull: false,
-            defaultValue: false
         },
         sex: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
             allownull: false,
-            defaultValue: false
         }
     });
     return users;
