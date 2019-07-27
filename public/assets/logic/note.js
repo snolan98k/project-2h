@@ -70,7 +70,7 @@ function displayNote(note) {
     document.getElementById('noteDisplay').innerHTML = out;
 
     document.getElementById('btnDelete').onclick = function () {
-        noteArrayt.splice(note, 1);
+        noteArray.splice(note, 1);
         localStorage.setItem('noteData', JSON.stringify(noteArray));
         init();
     }

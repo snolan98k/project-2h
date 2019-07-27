@@ -3,6 +3,12 @@ const btnSave =
 let resources = "";
 init();
 
+function Resource(date, url, yours) {
+    this.date = date;
+    this.url = url;
+    this.yours = yours;
+}
+
 function init() {
     let out = "";
     let resourceArray =
