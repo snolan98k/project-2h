@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resources</title>
+    <title>My Contacts</title>
     <link rel="stylesheet" href="assets/style/contacts.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,34 +17,20 @@
 
 <body>
     <div id="container">
-        <h1>Resources</h1>
-        <div id="ours">
-            <label for="suggestions">Our Suggestions</label>
-            <h4><a href="https://htmlcheatsheet.com/">Html Cheat Sheet</a>
-                <br>
-                <a href="https://stackoverflow.com/">Stack Overflow</a>
-                <br>
-                <a href="https://developer.mozilla.org/en-US/">Mozilla</a>
-                <br>
-                <a href="https://www.youtube.com/">YouTube</a>
-                <br>
-                <a href="https://www.w3schools.com/">W3Schools</a>
-            </h4> <label for=" yours">Add Your Own</label>
-            <input type="URL" id="URL" placeholder="URL/s">
-            <textarea id="Yours" placeholder="books, notes, answers"></textarea>
-            <button id="btnSave">Save Resource</button>
-        </div>
+        <h1>Contacts</h1>
+
         <div id="read">
-            <button id="btnWrite">Add New Source</button>
+            <button id="btnWrite">Add Friend</button>
             <select size="10" id="resourceMaster"></select>
             <div id="resourceDisplay"></div>
         </div>
+        <div id="like_button_container"></div>
         <div id="container">
             <a href="home.html" class="button--style-purple">Return Home</a>
         </div>
     </div>
     <!-- <script src="assets/logic/resource.js"></script> -->
-    <script src="assets/logic/resources.js"></script>
+    <script src="assets/logic/contacts.js"></script>
 </body>
 
 </html>
