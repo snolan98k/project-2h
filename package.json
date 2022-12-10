@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/snolan98k/project-2h#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase": "^6.5.0",
     "heroku": "^7.26.2",
     "mysql": "^2.17.1",
